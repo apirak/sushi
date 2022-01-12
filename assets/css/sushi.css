@@ -797,7 +797,7 @@ BUTTON:active, a.ss-button:active, a.ss-link:active {
   outline: var(--active-outline);
 }
 
-BUTTON.disable, BUTTON:DISABLED, a.ss-button.disable, a.ss-button:DISABLED, a.ss-link.disable, a.ss-link:DISABLED {
+BUTTON:DISABLED, BUTTON.-disable, a.ss-button:DISABLED, a.ss-button.-disable, a.ss-link:DISABLED, a.ss-link.-disable {
   background: var(--disable-background);
   color: rgba(0, 0, 0, 0.35);
   pointer-events: none;
@@ -879,7 +879,7 @@ UL.ss-menu-woven > li {
   --disable-background: rgba(0, 0, 0, 0.1);
 }
 
-UL.ss-menu-woven > li.selected {
+UL.ss-menu-woven > li.-selected {
   --background: #fef3e6;
 }
 
@@ -1033,7 +1033,7 @@ UL.ss-menu > li, UL.ss-menu-woven > li {
   --disable-background: rgba(0, 0, 0, 0.1);
 }
 
-UL.ss-menu > li.selected, UL.ss-menu-woven > li.selected {
+UL.ss-menu > li.-selected, UL.ss-menu-woven > li.-selected {
   --color: #231F20;
   --background: #fef3e6;
   --hover-background: #fef3e6;
@@ -1056,30 +1056,12 @@ UL.ss-menu, UL.ss-menu-woven {
   gap: 4px;
 }
 
-UL.ss-menu > li.selected > a::after, UL.ss-menu-woven > li.selected > a::after {
+UL.ss-menu > li.-selected > a::after, UL.ss-menu-woven > li.-selected > a::after {
   content: " ";
   position: relative;
   background-color: #FCB034;
   width: 4px;
   border-radius: 2px;
-}
-
-UL.ss-menu > li > .title, UL.ss-menu-woven > li > .title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 4px 8px;
-  gap: 8px;
-}
-
-UL.ss-menu > li > .title > span.label, UL.ss-menu-woven > li > .title > span.label {
-  font-size: 1em;
-  -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
 }
 
 UL.ss-menu > li > a, UL.ss-menu-woven > li > a {
@@ -1121,7 +1103,7 @@ UL.ss-menu > li > a:active, UL.ss-menu-woven > li > a:active {
   background: var(--active-background);
 }
 
-UL.ss-menu > li > a.disable, UL.ss-menu-woven > li > a.disable {
+UL.ss-menu > li > a.-disable, UL.ss-menu-woven > li > a.-disable {
   color: rgba(0, 0, 0, 0.35);
   pointer-events: none;
 }

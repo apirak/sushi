@@ -3,7 +3,7 @@
     each val, key in menuItems
       - var url = key
       if(val[1] == current)
-        li.selected
+        li.-selected
           a(href= val[1] + '.html')
             span(class=val[2])
             span.label #{val[0]}
@@ -14,8 +14,8 @@
             span(class=val[2])
             span.label #{val[0]}
       else
-        li
+        li.-title
           a(href="javascript:void(0)")
             span(class=val[2])
             span.label #{val[0]}
-            span.ss-icon-Maximize-arrow
+            span.ss-icon-Minimize-arrow

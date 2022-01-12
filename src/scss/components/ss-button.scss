@@ -67,7 +67,7 @@ BUTTON, a.ss-button, a.ss-link {
   color: var(--color);
   background: var(--background);
 
-  > span{
+  > span {
     font-size: $body-icon;
   }
 
@@ -82,7 +82,7 @@ BUTTON, a.ss-button, a.ss-link {
     outline: var(--active-outline);
   }
 
-  &.disable, &:DISABLED{
+  &:DISABLED, &.-disable {
     background: var(--disable-background);
     color: $transparent-black-35;
     pointer-events: none;

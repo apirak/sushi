@@ -12,7 +12,7 @@ UL.ss-menu-woven {
     --disable-background: #{$transparent-black-10};
   }
 
-  > li.selected {
+  > li.-selected {
     --background: #{$tertiary-orange-10};
   }
 

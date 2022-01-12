@@ -12,6 +12,9 @@
   }
 }
 
+// ss-site-header is special case use when Site Header is in content
+// for example > https://set-design-system.github.io/sushi/siteheader.html
+
 .ss-site > .header, .ss-site-header {
   flex-direction: row;
 

@@ -8,7 +8,7 @@ UL.ss-menu {
     --disable-background: #{$transparent-black-10};
   }
 
-  > li.selected {
+  > li.-selected {
     --color: #{$primary-black};
     --background: #{$tertiary-orange-10};
     --hover-background: #{$tertiary-orange-10};
@@ -26,24 +26,12 @@ UL.ss-menu {
   padding: 8px;
   gap: 4px;
 
-  > li.selected > a::after {
+  > li.-selected > a::after {
     content: "\00a0";
     position: relative;
     background-color: $primary-yellow;
     width: $radius;
     border-radius: calc($radius / 2);
-  }
-}
-
-UL.ss-menu > li > .title {
-  display: flex;
-  align-items: center;
-  padding: 4px 8px;
-  gap: 8px;
-
-  > span.label {
-    font-size: 1em;
-    flex-grow: 1;
   }
 }
 
@@ -78,7 +66,7 @@ UL.ss-menu > li > a {
     background: var(--active-background);
   }
 
-  &.disable{
+  &.-disable{
     color: $transparent-black-35;
     pointer-events: none;
   }
