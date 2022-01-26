@@ -562,7 +562,10 @@ HTML {
   height: 100%;
 }
 
-BODY, INPUT, TEXTAREA, BUTTON {
+BODY,
+INPUT,
+TEXTAREA,
+BUTTON {
   font-family: inherit;
   font-size: 1rem;
 }
@@ -581,14 +584,15 @@ BODY {
 }
 
 TABLE {
-  border: 1px solid #EEE;
+  border: 1px solid #eee;
 }
 
 TABLE TH {
   text-align: left;
 }
 
-TABLE TH, TABLE TD {
+TABLE TH,
+TABLE TD {
   padding: 20px;
 }
 
